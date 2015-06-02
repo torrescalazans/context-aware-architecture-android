@@ -1,0 +1,29 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="contextproviders.core">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application android:allowBackup="true" android:label="@string/app_name">
+
+        <service android:name=".ContextProvidersServices" android:process=":remote">
+            <intent-filter>
+                <!-- These are the interfaces supported by the service, which
+                     you can bind to. -->
+                <action android:name="contextproviders.interfaces.IContextProviders" />
+                <action android:name="contextproviders.interfaces.IContextProvidersCallback" />
+                <!-- This is an action code you can use to select the service
+                     without explicitly supplying the implementation class. -->
+                <action android:name="contextproviders.core.CONTEXT_PROVIDERS" />
+            </intent-filter>
+        </service>
+
+        <!-- Declaring broadcast receiver for BOOT_COMPLETED event -->
+        <receiver android:name=".BootLauncherReceiver" android:enabled="true" android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F9A825</color>
+    <color name="primary_dark">#F57F17</color>
+    <!-- <color name="accent">#ffc400</color> -->
+    <color name="text_primary">#FAFAFA</color>
+    <!-- <color name="text_secondary">#D9000000</color> -->
+    <!-- <color name="photo_tint">#88101010</color> -->
+
+    <color name="background_presentation_mode_light">#FAFAFA</color>
+    <color name="background_presentation_mode_dark">#424242</color>
+
+    <color name="textview_presentation_mode_light">#757575</color>
+    <color name="textview_presentation_mode_dark">#F5F5F5</color>
+</resources>

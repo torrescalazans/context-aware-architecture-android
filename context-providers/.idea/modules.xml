@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/context-providers.iml" filepath="$PROJECT_DIR$/context-providers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contextproviders/contextproviders.iml" filepath="$PROJECT_DIR$/contextproviders/contextproviders.iml" />
+      <module fileurl="file://$PROJECT_DIR$/contextproviders-lib/contextproviders-lib.iml" filepath="$PROJECT_DIR$/contextproviders-lib/contextproviders-lib.iml" />
+    </modules>
+  </component>
+</project>
+
